@@ -9,7 +9,7 @@ defmodule DiscussWeb.Router do
     plug :protect_from_forgery
     plug :put_secure_browser_headers
     plug Ueberauth
-    plug DiscussWeb.Plugs.SetUser
+    plug DiscussWeb.Plugs.SetUser 
   end
 
   pipeline :api do
